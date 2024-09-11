@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="flex py-5 gap-8 p-8 bg-white items-center sticky top-0 z-10">
+      <div>
+        <img
+          src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+          alt=""
+        />
+      </div>
+      <div class="flex gap-10">
+        <div class="relative flex items-center">
+          <input
+            type="text"
+            class="w-[50rem] pl-12 py-2 pr-4 rounded-lg bg-gray-100 text-gray-800 placeholder-gray-500 focus:outline-none"
+            placeholder='Search for products,Brands and more"'
+          />
+          <i
+            class="absolute left-3 text-gray-500 fa-solid fa-magnifying-glass"
+          ></i>
+        </div>
+
+        <div class="text-lg gap-2 flex">
+          <span><i class="fa-regular fa-circle-user"></i></span>
+          <span>Login</span>
+        </div>
+        <div class="text-lg gap-2 flex">
+          <span><i class="fa-solid fa-cart-shopping"></i></span>
+          <span>Cart</span>
+        </div>
+
+        <div class="flex gap-2 text-lg">
+          <span><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg" alt="Become a Seller" class="_1XmrCc"></i></span>
+          <span>Become a Seller</span>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <div class="flex gap-12 bg-white justify-center">
+      <div>
+        <img
+          src="https://rukminim1.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100"
+          alt=""
+          class="scale-100 hover:scale-[1.05]" />
+        <span class="text-lg font-medium text-sm">Grocery</span>
+      </div>
+      <div>
+        <img
+          src="https://rukminim1.flixcart.com/flap/80/80/image/22fddf3c7da4c4f4.png?q=100"
+          alt=""
+          class="scale-100 hover:scale-[1.05]"/>
+        <span class="text-lg font-medium text-sm">Mobiles</span>
+      </div>
+      <div>
+        <img
+          src="https://rukminim1.flixcart.com/fk-p-flap/80/80/image/0d75b34f7d8fbcb3.png?q=100"
+          alt=""
+          class="scale-100 hover:scale-[1.05]"
+        />
+        <span class="text-lg font-medium text-sm">Fashion</span>
+      </div>
+      <div>
+        <img
+          src="https://rukminim1.flixcart.com/flap/80/80/image/69c6589653afdb9a.png?q=100"
+          alt=""
+          class="scale-100 hover:scale-[1.05]"
+        />
+        <span class="text-lg font-medium text-sm">Electronics</span>
+      </div>
+      <div>
+        <img
+          src="https://rukminim1.flixcart.com/flap/80/80/image/ab7e2b022a4587dd.jpg?q=100"
+          alt=""
+          class="scale-100 hover:scale-[1.05]"
+        />
+        <span class="text-lg font-medium text-sm">Home & Furniture</span>
+      </div>
+      <div>
+        <img
+          src="https://rukminim1.flixcart.com/fk-p-flap/80/80/image/0139228b2f7eb413.jpg?q=100"
+          alt=""
+          class="scale-100 hover:scale-[1.05]"
+        />
+        <span class="text-lg font-medium text-sm">Appliances</span>
+      </div>
+      <div>
+        <img
+          src="https://rukminim1.flixcart.com/flap/80/80/image/71050627a56b4693.png?q=100"
+          alt=""
+          class="scale-100 hover:scale-[1.05]"
+        />
+        <span class="text-lg font-medium text-sm">Travel</span>
+      </div>
+      <div>
+        <img
+          src="https://rukminim1.flixcart.com/flap/80/80/image/dff3f7adcf3a90c6.png?q=100"
+          alt=""
+          class="scale-100 hover:scale-[1.05]"
+        />
+        <span class="text-lg font-medium text-sm">Beauty,toys & More</span>
+      </div>
+      <div>
+        <img
+          src="https://rukminim1.flixcart.com/fk-p-flap/80/80/image/05d708653beff580.png?q=100"
+          alt=""
+          class="scale-100 hover:scale-[1.05]"
+        />
+        <span class="text-lg font-medium text-sm">Two Wheelers</span>
+      </div>
+    </div>
+    <br />
+
+   
+
+    <div id="carouselExampleRide" class="carousel slide " data-bs-ride="true">
+      <div class="carousel-inner rounded-md ">
+        <div class="carousel-item active">
+          <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/2152c9d0afe3352d.jpg?q=20" class="d-block w-100 h-[20rem] object-cover" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/799c521a141bb4c7.png?q=20" class="d-block w-100 h-[20rem] object-cover" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/fb212593cc44b077.jpg?q=20" class="d-block w-100 h-[20rem] object-cover" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/e7554fcdb3042316.jpg?q=20" class="d-block w-100 h-[20rem] object-cover" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/50ba00cc44d3fa70.jpg?q=20" class="d-block w-100 h-[20rem] object-cover" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/e7554fcdb3042316.jpg?q=20" class="d-block w-100 h-[20rem] object-cover" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div><br>
+
+    <div class="text-xl font-semibold">
+      <span>Best deals on smartphones</span>
+    </div>
+    <div class="flex gap-2 p-8">
+      <div class="flex flex-col border-[1px] border-slate-300 w-70 p-2 h-[80%]">
+        <span class="flex justify-center"
+          ><img
+            src="https://rukminim2.flixcart.com/image/210/210/xif0q/mobile/y/9/0/-original-imahyuhfg2z4fvyh.jpeg?q=80"
+            alt=""
+            class="w-[89%] scale-100 hover:scale-[1.05]"
+        /></span>
+        <span class="flex justify-center">Realme p1 5G</span>
+        <span class="flex justify-center font-semibold">From ₹14,999</span>
+      </div>
+
+      <div class="flex flex-col border-[1px] border-slate-300 w-70 p-2">
+        <span class="flex justify-center">
+          <img
+            src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT2Jmf0gT78f4srVtp86pyhVMlYnmlbVfCadHxpT9vAfoK5tQHP5RYM-4gBj5_yAGxDXT9RSLo5MRCRgO1Xx5SOFQOQUj2FVFLaq7sDA5o3kavulxoH3uUXURmdQMADm4CzWUUHVy4&usqp=CAc"
+            alt=""
+            class="w-[89%] scale-100 hover:scale-[1.05]"
+            
+        /></span>
+        <span class="flex justify-center py-1">Poco M6 pro 5G</span>
+        <span class="flex justify-center font-semibold">Form ₹9,249*</span>
+      </div>
+
+      <div class="flex flex-col border-[1px] border-slate-300 w-70 p-2 h-[80%] ">
+        <span class="flex justify-center">
+          <img
+            src="https://rukminim2.flixcart.com/image/210/210/xif0q/mobile/4/y/b/-original-imahyzygycuyg3mq.jpeg?q=80"
+            alt=""
+            class="w-[89%] scale-100 hover:scale-[1.05]"
+        /></span>
+        <span class="flex justify-center">Realme p1 pro 5G</span>
+        <span class="flex justify-center font-semibold">From ₹20,999</span>
+      </div>
+
+      <div class="flex flex-col border-[1px] border-slate-300 w-70 p-2">
+        <span class="flex justify-center">
+          <img
+            src="https://rukminim1.flixcart.com/image/210/210/xif0q/mobile/h/i/x/-original-imagyr3vfpqrpkbv.jpeg?q=80"
+            alt=""
+            class="w-[89%] scale-100 hover:scale-[1.05]"
+        /></span>
+        <span class="justify-center flex">Nothing phone 2a</span>
+        <span class="flex justify-center font-semibold">Form ₹22,999*</span>
+      </div>
+
+      <div class="flex flex-col border-[1px] border-slate-300 w-70 p-2">
+        <span class="flex justify-center">
+          <img
+            src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR-tSBCCPSdSWWT402Dr9yRrOsHgGTtdRw1RzXKu8vuNjsVcdf0PkE-UByIu4nkYdyzQZkqs9GZR8EFUTve3BGpj6XLfMnFyXVDWaBhnyemPW2eFP7wQ7FnBSmG2-QIJA&usqp=CAc"
+            alt=""
+            class="w-[89%] scale-100 hover:scale-[1.05]"
+        /></span>
+        <span class="flex justify-center">Moto G64</span>
+        <span class="flex justify-center font-semibold">Just ₹13,999*</span>
+      </div>
+
+      <div class="flex flex-col border-[1px] border-slate-300 w-70 p-2">
+        <span class="flex justify-center">
+          <img
+            src="data:image/webp;base64,UklGRrobAABXRUJQVlA4IK4bAAAQYgCdASqgAMoAPmEmj0WkIiGXCs8QQAYEsbZ5reoY6eXc0arxnkA9lH6T7dvmt6gOV49hPmQ/Zn1l/TV/jvUA/pn+86yz0APLj9nj9sP289ovBt2qmrz7b8x+TF135kfZz+F/gf3M/Lf7v/4Hgj83P8r1EfbH+04EPdv9/6C/sT9r/5fp0feebn2k9gH80fYfwAqAf9N/v/ox/+3+r9BP1f+03wF/r76cPse/dn//+6x+5yg4ckVBwQygW9I4tCuGw+w4lh7b/Ex3548NV7scqHimr4tLiLmTxZ177korV9TgTzhIR2Lt42uG6HUbnf2OQUwxTxwGtY5nRHidfxVfVdcbC77pQayTcGgKxKeXaCxVropTlnOS4KkN9mE9V3yERO+Xr9Z73VibUsvjARZaZ3oed/GLmPdQNbnidTWLQoBw798svF8d1iqGOmuhuxnY2oLspItUrGgshr6YMjeOWySXrPlmzyiCVer497Zk4+nWQef80rKtvnJ9L8dPajeqt8cTwXc0BXaRGW+RseXOO0FbrCw+kdL2N37VGvSTaeXcMmLxdsr50PFLNQc3Pkx/YJ0XnU9k80MXO8cmQs3943VxXdFEVthG8bcccVaxUJ29WKd6W89Udj2rFQ8+IdjzV9dE6PiDul91v7I7hEs6iJh90WT0WhmDkGqKpGriqHvoQIKS5/VHmk6/LujKTiCpdDef7+d8lPmsCEj+sO7nAx+qwJJS1Yc5XbIfu9JeQlyfSyoB6sT0nlb8qRZOR3wivNEQIKrfn3uYot+qo9KQyCIVttX3a7WxR+GuafPdYdxBkw90Q3WzNgHeb41KZ5cqScPVHecfTHK9JVjEVPQu5YCtTvULUbmtF6SVJ3IrnXdLK77Y5p66fY4L/KLzgCMaycVUrjOQKixlE73eiYmzet451zY6rtRJfcm/HzDDeu41D0UwzxPzAjqiuMIvatkRI3E/f5I9+OFxe+OKDgb5iBZGNffdkdr2+ej/hjiLUx23Q5IUEJ+SmbthVAN7KuLJgS+h80iUANzP5478FPFgK7XLmOQ+K/oAAP75u4Md+P+u+98dwXs8dTKGLvp9tHd98O0ytNE7gDil2IbcqNV3tp6avJhzpGcivhucoRwg2WhwyRblw7eCkwfKWfqkFKqsoV7IsjSimHZSIRQBDLks0lJryJSntyHIqsTmHXzYrPZ42RfA+6QehPGRtBqRjm7/cYGzNnDzThi7M02+1kmacTPfjRLUjEsCTWM9kH+kNm46T32W2rj+yZlPVsxVqAaOHkvWWdEa5FuouKLBQBaQg6rb+T5ZSz376Fk5+LN6jkTLRF7NU+rMtgDIIRSUDtbS0+hDUzGl0mrnCJAt4x8oicusYFOlLKmKe/qfjD6C8/rZtTZUe/MF/rFM4MdG4c7t0SRN9F7KVlXA0QkuNuliGtBS/Rd3ddBo6M64ULrqmLYtwr7HigoTmy2+w92mckTUtm76BefT2rABVvq8Cm0dbM0bvzOPqM1xpPLmDdcv6dm3/Z6jbDGQC7Aar9wT2VpKoVkPvG/QIj/QsUl5AHqF+12BQEOPaLssoUUmeawl7nyvNFRsGdL5f8NT3FFvb41WQQllq1/1/2ZXfHNqsyexBWkcHXZ27J45vecDauz7zqZ6F3dYjz4yM7xjRFIpTILRWelVkG/vpxt6sU9NUA4cZHOB26rmOKwIAANJnVMLr2n5hhwxabDVi9zWqan3GFm+GrqEpDFKTPLSQSIk3b7zWSQvYKhHbnuWg+lCVkGDVoFKcQ/mo5byri4jqA84KvgYol2BX6bpwqnS19IzL9OZKInmd2WFnVi/Uko1jjrkXEa93idPqE+4kBdVwvHuVKggSHyBOvUTqUYPB8AiBNbODh9J08zEI36VOltFD4ec9a/fFT+FPbxKPvIhR9rt3AAf/yb5d/GA4tMUiRDdH+/sej+roQWGCLwCsdnnOQQmzcTkF6aAz0UWcLYt1tYxsIYJyspeuzGKNh1GMN9t31xVu9zXMMT0rVzZPs6RldAaOrDIZJ6Qx/ZGtMHJ7iXg04Ztmzz4jOAYK4QlIE2li97mw9CH+VxV4JWP9hcek+wzdafrpApcb9kwDUHoRd25trxi764Ys/ICzLolZ6DxEuTcEC1VzajHOEgJCtUCos5LfA40Go1giwtxisr4lgs/FyoMZ+QWzzG2ptlCtXFgszJNQngAuUaEffFDoCjSo07awZxuv+p8JieW660/mUexlsmzBJyCfLpb1AMIf3W9dc2PQJFMSL3TJnpd4GCMvQRbMaFpjXBQENwDLP6DwK+gCcEyjlbx9opZbfbSdT7Rkfs4CaIB29hXHoxqGzN2rU/y8pzXwQ0lNaE97LJCbB7paBouLJltnPE3fMFX025ZPyE2hfwRrKPcdkXm4SotJNKfcuFi4eEQo4LGRaYK6HR0QhkOuJZQeZyzFf4XkDDMpVj1oim7fUFwQldJMpLgOvvh99eCqbbyvyxR5d7Ln/DfBBUNUBhRzJkc6vm6wCevr0pQ6judBmQ1MhzHten35WlTFKX+W5BP38AFrZ18Cq0GF3lydJ/MGw6Id1yRiLh7cNULUuUSPjWKm+bpORXz5GcGkxSGzXGnD2qX6+My1QMnU1r9b4XQrQM9bWMNklNCxiHOi7q/izXrSAE0GPss6rvUcn9iw1RMr8sELvUYRG32yiX00A6/5O4dgcoCUAKH/9O5C9PHuqeOtDn/iIe7obfLNXgdfbsrNB52q9fcUESAwvUno/3ETwz6tV9ad/mteiEYtzkTqkfTtxThXRVIVr4vDXO7TJfECD5yq5eaF3/wl4sfBQN9zbaVU/23VsQWMyyH+upN+ITZWyk0tZ0MEoRmHkX3NKct8sCzMOfBHrXp9tegyW9+xWV63vt0g61/nH49cWiB75ELhCP5ca6g2UDvmJJdfDIAVUbZGYoNJ94Vce3ygFh+a+P5vN0eiB6p6SofFQhlgArVIeYFCse7gZG50X0HJWXqk8Ow3UH584gfxMsPYq333pn7169jOrMglT94mWTneSY2Y/+IHDepnyKU9MTrS7dwu7PozOv/+IYOpe/Z66YkKS5yaW5IXsp8AHNsKcgalX+oY3rHCJqjZ/MoDDB0foGblmUrHItG9pKYm2DjaxukCZOaRTIZQP7/hJvKdL/rbSU7Oq7HF+WUGVFBblKLVWiSTjq0BMjQnPWpRvs+aICrPrARacOzIAGFUOydRZ7LeDubhQ12Wal1qh+fMqmDX4EYgn07o54nZWbNKGfqfnP8/f3RLSLEmpPcQ3LI+R51Ohod5sqtVtT1kl518B26lBhmVsPQUat/PenEjRgFRBVdGQttYbqVKHK6pzQO6vuKcGCPa4dAdpAXFcGuYoj6p6d87/KqKV/8LUaKpAM+L12HKA5DJCcolVoUWTleyXaYkBlU4eB6wmjvl5bhvChBYS2VQA2/VWVBtx8hoVcEPvRDtwFtz9z5bgL44ZXZsC6oO+Urd4YxzggjpOp+QOIwaUzMAfQv59X4vwXTP3XGSSCPaKkSvvJ+kkFlpqK5s625Y7s2k7/SkuGT3tqS0TP5O9api5t5shVgJ94F8yA8m81m7c2TUopOFS0mp7OvHeVgfHicxxT4H8fjjBHhdU+kyCY/ouHmSy/3cYDBFx8Qxgy7ZzZ8zI2APHk/8wO7gjiiQE/wg4FcWnMdM1LRTTsk/dqORBRc9P4NLq1eIaRVPiJvjngjkl0+nLYciRHgvnSOpQviQqHncJbLxALevNbk/xoGArLB0ScBw/D8GdcT0a/aLntsHuXL9COpDPF2LvEqzhVq0ZQzZ5AlrMnOAdjqWq4SoV6+Kic+TucKF4wK3WFW5kx5YaZrpyGJ68rEE4agxPnYzaTOlh1cV579AqArZYFtjubSw2XBeHWvO32F9pwrb8wTOZ5gWS5zKXhjRSW89ljUE87bFia4P1uYlbkGy8diH2u3p7MMgbzXU1ojeal+DvO6KhuNdfAexKFev6N6j61h9cITxkFb1pbeOyiVyvafGQU+KGtcDQKCfn9s4Kdf3hiqdmCf2IgBK9m/UCTgODvbUPrzrWB8vZhJnF8oGfkmXpf72IdA7+s6pctXWG0C7Dz4JGDpMtHKt1IfVbceOYUzhgJ99bWQyYQoq0EsTqVOlCrP1LVRFFxDtOQYjVnsBfd8BAgf2Ind553b+ZAclIx+5KlOSRHP8Ml3E4trIn/ZA6z+WTzSJ8SOCtMgyG7bmBONBtRNPOYgn1vmHCeD84SuCTOlgP0mxcfUIfXAg428JY4CJYuWOjhOeYOi91rB6zYnszHACmh2T5TRVn6cL+a+Zvf0Y97WnJzPcCmowrOYBVolX6WLNos3M1+qPoapydagiQCcpd+ttXXpBmJyrxAkep+F3MI6ZDgKPTPD0Qh9oxUhQ7WwYB8oag9NLt7CEbZu3X1pCNjKwHOPlGvuEzNikqakNkwMwZHnYClaSR0Sx/V9dkFzyJqMUlRrWMUrse73nabXOtW4yKhLlrQaUoFpnFRhDRDomAm1J/UPhJtx2XxWsaOLNhJVg4t1S/ux1d5lqjdwLFWsBEYUL7DNizi8YzveAy3PSHIbEEuRabes/oWPB9hNi6czNozvaNhOmTFdYl2A3leei4g2XwIcqGue5McLUveSbM6m7EkDdpth8jdigvEPYd7GZwGKdk78jKPk1OQ6hJp2itNIqfVyiBV+nMdo95TsfKS/EcoiyWIDzjk1jwoTXxC4rDG+4OFH4y+4qlqo1zUuFyNSaZ78BNMtgqlgcoRp0w6lL6rs0jJkHrMlm0+czRC9YQJo2C9E7Xm1ll6wMrwK/F8vM21Lkv6aDDPKzLsTLI4YIx6u6ea120fcdy39MWd9EzsfhOWFmkB7sMXAAksExgE4qjmKB3yScT7TW0yiXcU2d5EfhevJ58KEEd9sWkooyG6S1o54q/LQSgksH26lYlHX/Ny8FxmvIs1xlzdSwyk4hW8z4mMnXWwKEuvhNnR0YEByjuCG2m9SXQNDKYZrXSQmGfqZ7YOrJ6um76fyv98Jqi3khVDL+ahxWXRzdsuIZmNek2eZ1tzJYLM+47Sfs1gAyuiPyuNgbXc/wBbFvZKh6iUShiTbIDYQrJUXZEvgtup7Amf9aBpgRFehjBxaTkarf7qmBFhXNTWZ4zFK1LRciaIbJ8SX/oLVLecfmXn222qXG9UkAugJE1CZ9SYyn5TMiX7X3a2VJtD0HswR7q0/MRxTH9DoehvGjZy1b+0WqWqODt+jZ6l/MdY0jxvfxrRS66bltaZ5hFlXrQbFYYuMNgo8On3G2NcJVkdU35/3Et2Zosz9j9fnN/CC3XMXFheV9osM9u3bx8/wyRxnnbuH8L8P3EUX1fui+VKiphRcjehNiFK+x+J2GZo6Gff5xtNIMtBiPQUtvg0nYGJN0wsmQYD1ZgF69TDX+iGRpBnyJ9RmED68iWFHl3KNr4N7WVojEXjANGWqFC9eWMknetFcJhXpOQ5vy0A+ogyBCr/wlNVTlxyW3SdnoWwA+aFE51MUZClDthXWOeSWzzRwL3MG8qY+5xCw8ADH6WlT2XBxUdpP9cFITB0GKFVF4mWPTvwNyZ9aDRaihWfOe8prISJtWwCOegOk4lf8tuhJFYByHdQKRqSicrB55Oj9YvxqQWtEFdRrK66n91eHV+lUiISxwNEqs0CNtE+vJKnfYXavPAzM5zWanNtL0t3T8tQcIq2DW0rLBO6K66ELj0WY9wEX9Rr1cg0BI3xOoB9kbOjEa8EVtmZPcHFz6DVf77b0q85yVUQtMJVD6rxdO1emiTsdUOi7qTXYlZYA2AN/xhR8YIDD9xWhiicv5YMe0GyU7aPjJkBWVU/+WGDWtfI2iT/LhPMKSDTLFmgMjqPT4Rkl3krBR9mg27HlNsbBBlCkWwJTgtlOXN3tGlPVYLWVXkY3FA6Mx7lCPCY6Az2BjxxTlUY24Y+7MQunq9hjpPRUy8JlckaFlfmI66P/92Isx7fMPKttBdomPpvdvZZNnQ6l664RATF07bgek+3v8HP33i42P5IFaAmrp+qsRzaeBLfmvfpeOMyPeA9/u8bS0IdvE8xIDzxTQVZW+7YO0HzLMZ4/y1wDmqHCVswFEOFQ9zV292cBpit4msp4ferOcjUpfC5UBva4/9cwl5GnXKSTl/fATCFQe1SAHxTEAmbyIg6jW7/OyrcODWrG23BFSSrjKjMUr39vh1528RCf6QnahsVZI3SX/QgraM5h3CHoBLBm7CDLSu+Sg8gFZxV8Uqspv/qC0kG9zC17sJBrp4NsA8M5gEBHs1eetb1c6abirIUlU1T/zipOlm+MC7S08mClWbp3i3JaCTNr2AyfJ90aDkT/Gr6K7xnHVVg2T4LmVvUYiMXGb6XHYTkExXnYvkcjIBnxCtVoy068SxcNDYhx72muqXu1aygw9dWkqsXSfd/K56DaebrMy1DH0bwKl9RK+21zgqZoFtbj35+Uc4ez+CDvgY/VLbYIE+LrGDahOrcdqi7IHk28s4rUgBO2Ym/bGenXs9bM2q3lvFo7WxCRREa2Seo0aKXDnDhemnDIxosAve7ww6CQiCasy9keWnZu8TabUm8CtKdTkufUE0gWmM+Dkc03L9jQJSMz2/Nyjdk+fXyR6/kvy+EeuqZBs378xL1iP6kp1vWgENTD6XCll9VkZObor3fDKJsgEKdgVXby6uHCDb0ssVju06q58QC41ZZalXznRy5MaSp7gRr6EM1joKrcnmloMvMR201mtaOT04b/VGpIDIpl9+IhfRCGB5igfujIAsCA9ILZCvc7bcJtPBTnktAfp8+Tm+sfKyi86zUfWXmZpeY9XtkCI8veJfmFSpaf3gt66tuotNV1m0o83LIhv6jFl6PZKXl/nq63Oe9GqdUj/n0+FcJSnkKmyzgq1QIgWZmRmfpL3OsF1V47/tTHbJyXrRX0YiQtKgmYd6CRjPlzoSpTvY6/yq7vKNTxveclItJfcdrth0Fv1rigRftnOQkVtpq/IUwv//IslKcX0P51sE46j9ntziI24wwv8D9BiC0XQ+Iwfqwl+z3TZpRrPmmYtesfeW9AB2yO2s9KkjEJWybp7t8OOy71s/kjlAE8Pz/0rUMAqtTlgvJQsfFFX51yxZkmu75qeygYyovy00edz0SQbZB6/3gKOj/nndRx0OXrGw0j54gStyKhBd9MEHndaotLPxkG9NzdTHfhefdV1ew2NyY4YDLz9+A8T3r689xhImw5+EFr0m6WdqtjgXIfiHJBHa1RzKz4hUDucPZN26LPsJgzvZ85/i+UsnG/Sa8k24SgLxZmORPtQP2Wm3YUUQtFPBHlcEaNAxvgKKwt3dGbtklvFz1U+epz4xOEpznE46FiJFHQ+l23RQNBMVNxwNdJSCXr7iGTyI17U5TdykpJ4BARDTvXJDpnG9lVRzI2BJNMaYAVmy5rchYl4S8cGM5m3nsiuVVI7pqOQDQu6zcT63fG3c0dgaH/K0BOrTNawESSnf3cJxDqqhe1qVkLsfg+oDiTgF1nJapmJ3ZZmQTjsEBxx32L8MTRzh51ntD5zKHIg4wB4CNHw6aGl5dfcoT6JZSjXtk0fQtUVprCk9nRWf0+pVzOiXsTa1N+YLcrC41ulWLIE5EKqs9m6X0ib4ieBTfam+SFHnH0KRieM1+5s4zemrXO7qvZpM9RrO+/h2homyTdvakzFsRbVrGkT7T+LnS95CwAE8CgJ9S6jKQCZ+3xP29XmQLug7YE6/zW+RyLL2qAziNiNgog8DuQonZ9wY9EZUBwk7MI6GyCKZZbnMMSgTCWs2gG4y+OY/jnep55CepwNFHIqd7zttCy3JPafrTiHvETLZS8l/Mh/Gcs6biPnQfCZum3RoAZbZw+/rMPGOrUJw1GaHuyg/y7b8BTYktxwADZ3QozTdsUo0wwTzPHFlv2e3EKgeG1dNwAqNpoqR1lmJqdVLCafKZgZnV5dXlvCIrSQzC/g0oJLyvGMxxjGVrMFkPhyruTb0Xl4IoytOYVuSjhTQ36qnDosBF0Xi9k4BtKSrsS33DkdIeG6SELCmsL1/UU67aaG8ejWyUmvkvl/shjVrQOcsXfsH0/L1OH54IwxbaSlZ7dk53qemuEaxME+7EcOIp3or7bgvD9dAN522QoBgm3YGG8UdjaCsO0gypvFRao1arkrR5XMfLoNzbH4rbQqnD6OKm9LNmhTdAMrufh2h3fGDMxfNxMhFCMlLtZZjN7a4YduXE08HfmP6OUnZCkHdWsJJ0bBaRLlNhxeq1FqwIJcbYgV94uP+r5rNWv0i+V0D2QKT1z6UBeD4K/PaLkjd4P0bLOdNi5DLzitzy960fOUEodTkQS2GV3ex/hwPtq4S9ey1T1UEU+d1FIAw/rLzpZ95MKeRgeAQat73PvF4dyKiTsbgEDcL3AfvIz8lYFUHMKz5GZXxxT/K6Cr82hkI7kzrPxgEkcFmqQR9jcuZ8X8GZvuHjtT5WnyR72slXOQCKUx38B/lPyNdHvIuiIzS2VHNegGxz304dksqGJxRM1KAz5DIrdjeblyJT1sHuDAcycUtVO4e8UAijsT5fapOgEPxh++2MF6Nek3+v69IAWuVdnFDk+d+sNFpFnF8m8kiXHuo+HX7e2P5iR1pX51t8miTOFjTpaRaSEXQLvVfqQ62y3xD3cZUJubZBejsWfMhOnqP2e5iF5uRH1rlxtr067igS/Hy6Gmy+kF5v12gFxbU4Puf31+L/Bs4eyDopALxT3awp+8lJv570pme03864vz/StuB3f40NUc/1+siljUixMapA8qGjz1GcelC2fKKcnDpopn3FLFuAN3jDBTiujnvy2l3lS+yrLnCC+/Ck0xxPRzFKOhJrdIyQDb/HNxckAb+T9qjbjtyP/fTI/8RBF46TTshUTkOGJbfmz83H4wgVgzRowCmdWNihDwyM7bIXDBo01ip/TR6oFQ6BxFcUPXSK2oU++c44UrPkpcqAtdBzGRHhDTRK88i35EkiWyEf+xPibwJC5Xk+qDqVycHliKidxAF0RwSIpF5CCTdei29MmlHqUAzQ/kMywdGfYaPMOMtzt0FEDtanaAR17QBLMVANad13YBiHsABcxB5u2YzbMxRGceoFH7NQIocgeR/5fTMpyQwmtvtuiMZ33/4XCCM2k9rvYJ5dmu1HosGxbHrPsFIGpOC5bc9IM7Ti5eRRFxC7Kqn8IMEXuUEoAhs3AjKa+kPjW2HT6Cudoyzm54q3xvRZlKdswh1tOuCb6Y+Wvx6ymhHpCP57v00uq4lMZ/bFL5AjN9j5t5koR5TPHotNDYFOflRx43FnBLmzB4zQOj/DISVYCJyXqgTPLfDO7q27e+Yt96j2AkjRNF0Heq7knkLyXKtuEndDTTEawXtXN1cO3AiCpyDprEnNvxNM0xNALRj4+nxolTckIfu9W+FRZRZv8E7megAA="
+            alt=""
+            class="w-[89%] scale-100 hover:scale-[1.05]"
+        /></span> 
+        <span class="flex justify-center">Infinix GT 20 pro</span>
+        <span class="flex justify-center font-semibold">From ₹17,999*</span>
+      </div>
+
+      <div class="flex flex-col border-[1px] border-slate-300 w-70 p-2">
+        <span class="flex justify-center">
+          <img
+            src="https://rukminim2.flixcart.com/image/210/210/xif0q/mobile/w/3/4/-original-imahyytukhkky5ew.jpeg?q=80"
+            alt=""
+            class="w-[89%] scale-100 hover:scale-[1.05]"
+        /></span>
+        <span class="flex justify-center">Vivo T3x 5g</span>
+        <span class="flex justify-center font-semibold">From₹12,499*</span>
+      </div>
+
+      <div class="flex flex-col border-[1px] border-slate-300 w-70 p-2">
+        <span class="flex justify-center">
+          <img
+            src="https://rukminim2.flixcart.com/image/210/210/xif0q/mobile/m/c/s/-original-imagztn7sycc4h84.jpeg?q=80"
+            alt=""
+            class="w-[89%] scale-100 hover:scale-[1.05]"
+        /></span>
+        <span class="flex justify-center">Samsung S23 FE</span>
+        <span class="flex justify-center font-semibold">From₹39,999*</span>
+      </div>
+    </div>
+
+    <div class="p-4">
+    <div class="flex gap-2">
+        <div class="">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/008d2603e4a6b790.jpg?q=20" alt="" class="scale-100 hover:scale-[1.02]">
+        </div>
+
+        <div>
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/c2c730c7d61ec8d1.jpg?q=20" alt="" class="scale-100 hover:scale-[1.02]">
+        </div>
+
+        <div>
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/aac9807a8bd3a051.jpg?q=20" alt="" class="scale-100 hover:scale-[1.02]">
+        </div>
+    </div><br>
+
+    <div class="flex gap-2">
+        <div>
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/aac9807a8bd3a051.jpg?q=20" alt="" class="scale-100 hover:scale-[1.02]">
+        </div>
+
+        <div>
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/706ffe302ef96052.jpg?q=20" alt=""  class="scale-100 hover:scale-[1.02]">
+        </div>
+
+        <div>
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/227613e147270703.jpg?q=20" alt="" class="scale-100 hover:scale-[1.02]">
+        </div>
+    </div><br>
+
+    <div class="flex gap-2">
+        <div>
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/444f88129e57ad05.jpg?q=20" alt="" class="scale-100 hover:scale-[1.02]">
+        </div>
+
+        <div>
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/6ba72d2e3a9df48c.jpg?q=20" alt="" class="scale-100 hover:scale-[1.02]">
+        </div>
+
+        <div>
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/8abf80aee2038bf8.jpg?q=20" alt="" class="scale-100 hover:scale-[1.02]">
+        </div>
+    </div><br>
+
+    <div class="flex gap-2">
+        <div>
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/e61b6f44ea88385e.jpg?q=20" alt="" class="scale-100 hover:scale-[1.02]">
+    </div>
+
+    <div>
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/cc71b7dc41977490.jpg?q=20" alt="" class="scale-100 hover:scale-[1.02]">
+    </div>
+
+    <div>
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/ddf142328bf03d27.jpg?q=20" alt="" class="scale-100 hover:scale-[1.02]">
+    </div>
+</div><br>
+
+<div class="flex gap-2">
+    <div class="">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/33d95537f3fa4c4d.jpg?q=20" alt="" class="scale-100 hover:scale-[1.02]">
+    </div>
+
+    <div>
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/33d95537f3fa4c4d.jpg?q=20" alt="" class="scale-100 hover:scale-[1.02]">
+    </div>
+
+    <div>
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/8dfc472459d213d7.jpeg?q=20" alt="" class="scale-100 hover:scale-[1.02]">
+    </div>
+</div>
+
+<div class="flex p-2 gap-6 justify-end">
+    <div class="flex gap-4 ">
+        <div class="p-4 border-[1px] border-slate-300  w-[20rem] h-[21rem] flex flex-col">
+        <span class=""><img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/h/e/h/10-teddy-running-shoe-for-men-arivo-black-original-imah2gzh6urynemd.jpeg?q=70" alt="" class="h-[15rem] w-[96%] scale-100 hover:scale-[1.05]"></span>
+      <div class="">
+        <span class="flex text-gray-400">Arivo</span>
+        <span>Chunky Teddy Print</span>
+      </div>
+        <div>
+            <span class="">₹799</span>
+            <span class="line-through text-gray-400">₹2,499</span>
+            <span class="text-lime-600">68% off</span>
+        </div>
+
+        
+
+        </div>
+
+        
+
+        <div class="p-4 border-[1px] border-slate-300  w-[19rem] h-[21rem] flex flex-col">
+            <span class="flex justify-center"><img src="https://rukminim2.flixcart.com/image/612/612/l02r1jk0/watch/v/y/f/-original-imaf8qx8rmzayqrs.jpeg?q=70" alt="" class="w-[75%] h-[15rem] scale-100 hover:scale-[1.05]"></span>
+           <div class="">
+            <span class="flex text-gray-400">SONATA</span>
+            <span class="text-sm">Volt Analog Watch </span>
+            
+           </div>
+            <div>
+                <span class="">₹489</span>
+                <span class="line-through text-gray-400">₹745</span>
+                <span class="text-lime-600 text-sm">34% off</span>
+            </div>
+    
+            </div>
+
+       
+    </div>
+    
+
+    
+
+    <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqDWJlWzZ6LDS0eBnQChL3Gr2By2tNB5kWzQ&s" alt=""  class="w-[60rem] h-[21rem] ">
+    </div>
+</div>
+</div>
+
+<div class="flex gap-4 p-8 justify-center">
+  <div class="flex flex-col border-[1px] border-slate-300 w-70 h-[15rem] ">
+   <span class="py-10 p-4"> <img src="https://rukminim2.flixcart.com/image/612/612/l1fc0i80/fan/e/6/s/-original-imagczzsevxhn2qw.jpeg?q=70" alt="" class="w-40 scale-100 hover:scale-[1.05]"></span>
+    <div class="">
+      <span class="flex justify-center">Fans & Geysers</span>
+    <span class="flex  justify-center font-semibold">From ₹999</span>
+    </div>
+  </div>
+
+  <div class="flex flex-col border-[1px] border-slate-300 w-[12rem] h-[15rem] p-2">
+   <span class="p-2 flex justify-center w-40"> <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/refrigerator-new/3/p/7/-original-imahyjqgzuzjcyhg.jpeg?q=70" alt="" class="w-[5rem] h-[9rem] scale-100 hover:scale-[1.05]"></span>
+   <div class="">
+    <span class="flex justify-center">Home Essentials</span>
+    <span class="flex justify-center text-lg font-semibold">Shop Now!</span>
+   </div>
+  
+  </div>
+
+  <div class="flex flex-col border-[1px] border-slate-300 w-70 h-[15rem] ">
+    <span class="flex justify-center py-16 p-8"><img src="https://rukminim2.flixcart.com/image/312/312/xif0q/air-conditioner-new/r/w/k/-original-imagy3z6zhnhpzzv.jpeg?q=70" alt="" class="w-[10rem] scale-100 hover:scale-[1.05]"></span>
+    <span class="flex justify-center">Best Deals on ACs</span>
+    <span class="flex justify-center font-semibold">From ₹2,499/M*</span>
+  </div>
+
+  <div class="flex flex-col border-[1px] border-slate-300 w-70 h-[15rem]">
+    <span class="py-10 p-8"><img src="https://rukminim2.flixcart.com/image/312/312/xif0q/microwave-new/p/u/c/-original-imah46sa9st2nvge.jpeg?q=70" alt="" class="w-[10rem] scale-100 hover:scale-[1.05]"></span>
+    <span class="flex justify-center">Best-Selling</span>
+    <span class="flex justify-center font-semibold">From ₹4,990</span>
+  </div>
+
+  <div class="flex flex-col border-[1px] border-slate-300 w-70 h-[15rem]">
+    <span class="py-10 p-6"><img src="https://rukminim2.flixcart.com/image/312/312/xif0q/microwave-new/2/u/d/-original-imah46saqxyttetn.jpeg?q=70" alt="" class="w-[10rem] scale-100 hover:scale-[1.05]"></span>
+    <span class="flex justify-center">Best Selling Microwave</span>
+    <span class="flex justify-center font-semibold">From ₹4,690</span>
+
+  </div>
+
+  <div class="flex flex-col border-[1px] border-slate-300 w-70 h-[15rem]">
+    <span class="py-3 p-4"><img src="https://rukminim2.flixcart.com/image/312/312/xif0q/washing-machine-new/b/c/g/-original-imagvrbhcwuwz7j7.jpeg?q=70" alt="" class="w-[8rem] scale-100 hover:scale-[1.05]"></span>
+    <span class="flex justify-center">Top Deals On washing</span>
+    <span class="flex justify-center font-semibold">Shop!</span>
+  </div>
+
+  <div class="flex flex-col border-[1px] border-slate-300 w-70 h-[15rem]">
+    <span class="p-2"><img src="https://rukminim2.flixcart.com/image/612/612/xif0q/cases-covers/back-cover/s/j/g/868cpgf-gl1611-qrioh-original-imah3acjj5dhsyzm.jpeg?q=70" alt="" class="w-[9rem] scale-100 hover:scale-[1.05]"></span>
+    <span class="flex justify-center">Apple iphone14 plus</span>
+    <span class="flex justify-center font-semibold">From₹559</span>
+  </div>
+</div>
+
+<div class="flex justify-center gap-4">
+  <div class="flex flex-col border-[1px] border-slate-300 w-[12rem] h-[14rem]">
+    <span class="py-3 p-4"><img src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/q/m/s/-original-imah3zvdthupfejc.jpeg?q=70" alt="" class="w-[10rem] scale-100 hover:scale-[1.05]"></span>
+    <span class="flex justify-center">BoAt Headphone</span>
+    <span class="flex justify-center font-semibold">From₹699</span>
+  </div>
+
+
+<div class="flex flex-col border-[1px] border-slate-300 w-70 h-[14rem]">
+  <span class="p-3"><img src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/o/2/m/-original-imagmhr682pdbxej.jpeg?q=70" alt="" class="w-[10rem] h-[9rem] scale-100 hover:scale-[1.05]"></span>
+  <span class="flex justify-center">Bluetooth Headphone</span>
+  <span class="flex justify-center font-semibold">From₹699</span>
+</div>
+
+<div class="flex flex-col border-[1px] border-slate-300 w-70 h-[14rem]">
+  <span class="p-3"><img src="https://rukminim2.flixcart.com/image/612/612/xif0q/power-bank/e/y/a/lp20-qp1-lp20-qp1-20000-flipkart-smartbuy-original-imagrgu87efmcgu4.jpeg?q=70" alt="" class="w-[10rem] h-[9rem] scale-100 hover:scale-[1.05]"></span>
+  <span class="flex justify-center">Top Deals on Powerbanks</span>
+  <span class="flex justify-center font-semibold">From₹459</span>
+</div>
+
+<div class="flex flex-col border-[1px] border-slate-300 w-70 h-[14rem]  ">
+  <span class="p-3"><img src="https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/r/a/g/40-girls-i7-pro-max-smart-android-ios-melbon-yes-original-imah2z7sznh2k9ye.jpeg?q=70" alt="" class="w-[10rem] h-[9rem] scale-100 hover:scale-[1.05]"></span>
+  <span class="flex justify-center">Calling Smartwatches</span>
+  <span class="flex justify-center font-semibold">From₹799</span>
+</div>
+
+<div class="flex flex-col border-[1px] border-slate-300 w-[12rem] h-[14rem]  ">
+  <span class="p-2"><img src="https://rukminim2.flixcart.com/image/416/416/xif0q/home-security-camera/y/b/1/-original-imah2e2d6xbjejfb.jpeg?q=70&crop=false" alt="" class="w-[10rem] scale-100 hover:scale-[1.05]"></span>
+  <span class="flex justify-center">Cp plus E-24A</span>
+  <span class="flex justify-center font-semibold">From₹1,599</span>
+</div>
+
+<div class="flex flex-col border-[1px] border-slate-300 w-[10rem] h-[14rem]  ">
+  <span class="flex justify-center p-2 "><img src="https://rukminim2.flixcart.com/image/612/612/kfcv6vk0/power-bank/r/f/5/power-bank-20000-plm18zm-mi-original-imafvtc7x9zgrzbz.jpeg?q=70" alt="" class="h-[10rem] scale-100 hover:scale-[1.05]"></span>
+  <span class="flex justify-center">Best of powerbanks</span>
+  <span class="flex justify-center font-semibold">From₹499</span>
+</div>
+
+<div class="flex flex-col border-[1px] border-slate-300 w-[10rem] h-[14rem]  ">
+  <span class="p-3"><img src="https://rukminim2.flixcart.com/image/612/612/xif0q/cases-covers/back-cover/c/m/k/2d-glass-positively-ip-14-plus-bornstud-original-imah48yeutvjrfz2.jpeg?q=70" alt="" class="w-[8rem] h-[9rem] scale-100 hover:scale-[1.05]"></span>
+  <span class="flex justify-center">Apple iphone13 cover</span>
+  <span class="flex justify-center font-semibold">From₹449</span>
+</div>
+</div>
+
+<div class="p-6">
+<div class="flex gap-2 ">
+  <div>
+    <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/3f495cdb45084fef.jpg?q=20" alt="" class="scale-100 hover:scale-[1.02]">
+  </div>
+
+  <div>
+    <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/ca6858fb791bfeea.jpg?q=20" alt="" class="scale-100 hover:scale-[1.02]">
+  </div>
+
+  <div>
+    <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/891f2794e1b7b8a7.jpg?q=20" alt="" class="scale-100 hover:scale-[1.02]">
+  </div>
+</div><br>
+
+<div class="flex gap-2 ">
+  <div>
+    <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/c2766e2a3676ed08.jpg?q=20" alt="" class="scale-100 hover:scale-[1.02]">
+  </div>
+
+  <div>
+    <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/c2766e2a3676ed08.jpg?q=20" alt="" class="scale-100 hover:scale-[1.02]">
+  </div>
+
+  <div>
+    <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/b368eb907ff1c615.jpg?q=20" alt="" class="scale-100 hover:scale-[1.02]">
+  </div>
+</div>
+</div>
+
+<div  class="flex gap-2 justify-center">
+  <div class="flex flex-col border-[1px] border-slate-300 w-[12rem] h-[15rem] ">
+    <span class="flex justify-center py-2"><img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/r/z/l/s-gucci-tshirt-sti-original-imahyyzs4kpgbfby.jpeg?q=70" alt="" class="w-[11rem] h-[10rem]  scale-100 hover:scale-[1.05]"></span>
+   <div class="p-2">
+    <span class="flex ">Men's T-Shirts</span>
+    <span class="flex font-semibold text-lime-600">Special Offer</span>
+   </div>
+  </div>
+
+  <div class="flex flex-col border-[1px] border-slate-300 w-[12rem] h-[15rem] ">
+    <span class="flex justify-center py-2"><img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shopsy-slipper-flip-flop/z/r/b/5-shp-brd-695-birde-black-grey-original-imahykhpyg2pvech.jpeg?q=70" alt="" class="w-[11rem] h-[10rem] scale-100 hover:scale-[1.05]"></span>
+    <div class="p-2">
+      <span>Men's Slippers & flip</span>
+    <span class="flex font-semibold text-lime-700">Min. 70% Off</span>
+    </div>
+  </div>
+
+  <div class="flex flex-col border-[1px] border-slate-300 w-[12rem] h-[15rem]">
+    <span class="flex justify-center py-2"><img src="https://rukminim2.flixcart.com/image/612/612/xif0q/nut-dry-fruit/f/9/n/1-mix-dry-fruit-panchmeva-1kg-jar-1-mason-jar-plum-natural-original-imah3qzbkagwhdjd.jpeg?q=70" alt="" class="w-[11rem] h-[10rem] scale-100 hover:scale-[1.05]"></span>
+    <div class="p-2">
+      <span>Dry Fruit, Nut & seed</span>
+    <span class="flex font-semibold text-lime-700">Special Offer</span>
+    </div>
+  </div>
+
+  <div class="flex flex-col border-[1px] border-slate-300 w-[12rem] h-[15rem]">
+    <span class="p-2"><img src="https://rukminim2.flixcart.com/image/612/612/xif0q/sunglass/u/r/x/free-best-fashion-goggle-roadway-original-imah2hkyf83frnza.jpeg?q=70" alt="" class="w-[11rem] h-[10rem] scale-100 hover:scale-[1.05]"></span>
+    <div class="p-2">
+      <span class="">Sunglasses</span>
+    <span class="flex text-lime-700 font-semibold">Min.50% Off</span>
+    </div>
+  </div>
+
+  <div class="flex flex-col border-[1px] border-slate-300 w-[12rem] h-[15rem]">
+    <span class="p-2"><img src="https://rukminim2.flixcart.com/image/612/612/ktuewsw0/accessories-combo/s/5/s/sty-xcbn-44-loopa-original-imag73kxzkvrqsuh.jpeg?q=70" alt="" class="w-[11rem] h-[10rem] scale-100 hover:scale-[1.05]"></span>
+    <div class="p-2">
+      <span class="">Wallets</span>
+      <span class="flex font-semibold text-lime-700">Min.70% Off</span>
+    </div>
+  </div>
+
+  <div class="flex flex-col border-[1px] border-slate-300 w-[12rem] h-[15rem]">
+    <span class="p-2"><img src="https://rukminim2.flixcart.com/image/612/612/xif0q/trimmer/q/q/y/1-10-mm-hair-removal-machine-l-stainless-steel-cordless-waikil-original-imah3e7bzkag82ds.jpeg?q=70" alt="" class="w-[11rem] h-[10rem] scale-100 hover:scale-[1.05]"></span>
+    <div class="p-2">
+      <span class="">Trimmers</span>
+      <span class="flex font-semibold text-lime-700">Min. 50% Off</span>
+    </div>
+  </div>
+
+  <div class="flex flex-col border-[1px] border-slate-300 w-[12rem] h-[15rem]">
+    <span class="p-2"><img src="https://rukminim2.flixcart.com/image/612/612/xif0q/nail-polish/f/z/u/42-lustrous-6-piece-shine-nail-polish-kit-for-dazzling-manicures-original-imagrzkvkqkpajzt.jpeg?q=70" alt="" class="w-[11rem] h-[10rem] scale-100 hover:scale-[1.05]"></span>
+    <div class="p-2">
+      <span class="">Nail Polish</span>
+      <span class="flex font-semibold text-lime-700">Min. 50% Off</span>
+    </div>
+  </div>
+</div>
+
+<div class="p-6 py-4">
+  <div class="flex gap-2">
+<div>
+<img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/b4442516e5d97f3c.jpg?q=20" alt="" class="scale-100 hover:scale-[1.02]">
+</div>
+
+<div>
+  <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/7e2528a60e5875ea.jpg?q=20" alt="" class="scale-100 hover:scale-[1.02]">
+</div>
+
+<div>
+  <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/1d685cc886f7f15b.jpg?q=20" alt="" class="scale-100 hover:scale-[1.02]">
+</div>
+  </div><br>
+
+  <div class="flex gap-2">
+    <div>
+      <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/126ee79a04c6cf6b.jpg?q=20" alt="" class="scale-100 hover:scale-[1.02]">
+    </div>
+
+    <div>
+      <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/ac0dd857b10a869d.jpg?q=20" alt="" class="scale-100 hover:scale-[1.02]">
+    </div>
+
+    <div>
+      <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/d010da0b60e30ea0.jpg?q=20" alt="" class="scale-100 hover:scale-[1.02]">
+    </div>
+  </div>
+</div>
+
+<div class=" flex gap-4">
+  <div class="flex flex-col border-[1px] border-slate-300 w-[12rem] h-[15rem]">
+    <span class="p-4 flex justify-center"><img src="https://rukminim2.flixcart.com/image/312/312/xif0q/cases-covers/p/r/9/-original-imagt4xjqpasyvdf.jpeg?q=70&crop=false" alt="" class="w-[11rem] h-[9rem] scale-100 hover:scale-[1.05]"></span>
+    <span class="flex justify-center">Back Cover for Vivo v23</span>
+    <div class="flex justify-center gap-2">
+      <span>₹288</span>
+      <span  class="line-through text-gray-400 font-light">₹799</span>
+    </div>
+  </div>
+
+  <div class="flex flex-col border-[1px] border-slate-300 w-[12rem] h-[15rem]">
+    <span class="p-4"><img src="https://rukminim2.flixcart.com/image/312/312/xif0q/shoe/j/7/j/10-teddy-running-shoe-for-men-arivo-black-original-imah2gzhbdff26ry.jpeg?q=70&crop=false" alt="" class="w-[11rem] h-[9rem] scale-100 hover:scale-[1.05]"></span>
+    <span class="flex justify-center">Chunky Teddy Print </span>
+    <div class="flex justify-center gap-2">
+      <span>₹799</span>
+      <span class="line-through text-gray-500 font-light">2,499</span>
+    </div>
+  </div>
+
+  <div class="flex flex-col border-[1px] border-slate-300 w-[12rem] h-[15rem]">
+    <span class="p-4"><img src="https://rukminim2.flixcart.com/image/312/312/xif0q/watch/i/q/e/-original-imagnre8pbpnfhgz.jpeg?q=70&crop=false" alt="" class="w-[10rem] h-[9rem] scale-100 hover:scale-[1.05]"></span>
+    <span class="flex justify-center">Volt Analog Watch-For..</span>
+    <div class="flex justify-center gap-2">
+      <span>₹489</span>
+      <span class="line-through text-gray-500 font-light">₹745</span>
+    </div>
+  </div>
+
+  <div class="flex flex-col border-[1px] border-slate-300 w-[12rem] h-[15rem]">
+    <span class="p-4"><img src="https://rukminim2.flixcart.com/image/312/312/jpfsnm80/book/4/5/4/images-original-imafbnxphzaesfyp.jpeg?q=70&crop=false" alt="" class="w-[10rem] h-[9rem] scale-100 hover:scale-[1.05]"></span>
+    <span class="flex justify-center">Images</span>
+    <div class="flex justify-center gap-2">
+      <span>2,280</span>
+      <span class="line-through text-gray-500 font-light">3,800</span>
+    </div>
+  </div>
+</div>
+
+
+  </body>
+</html>
